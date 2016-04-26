@@ -20,13 +20,16 @@
 
 </div>
 
-<div class="container">
   <form action="index.html" method="get">
-    <input type="text" id="task" maxlength="255" value="Type in your task here!" class="col-sm-6">
-  <button type="submit" class="col-sm-3">Create new task</button>
-
+    <div class="container input-group">
+      <input type="text" id="task" maxlength="255" placeholder="Type in your task here!" class="form-control">
+      <input type="datetime-local" id="datetime" placeholder="datetime of expiration" class="form-control">
+      <div class="input-group-btn">
+        <button type="submit" class="btn btn-default">Create</button>
+      </div>
+    </div>
   </form>
-</div>
+
 
 
 </body>
